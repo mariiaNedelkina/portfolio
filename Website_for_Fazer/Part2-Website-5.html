@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fazer Pure Dark</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            .header {
+              overflow: hidden;
+              background-color: black;
+              padding: 30px 10px
+            }
+            
+            .header-right {
+              float: right;
+              padding-top: 65px;
+              padding-right: 25px
+            }
+            
+            @media screen and (max-width: 1180px) {
+              .header a, img {
+                float: none;
+                display: block;
+                text-align: left;
+              }
+
+              .header-right {
+                float: none;
+              }
+            }
+
+            body {
+                background-color: black
+            }
+            
+            .header img {
+                float:left;
+                margin-left: 15px
+            }
+            
+            a {
+                font-family: 'Montserrat', sans-serif;
+                font-size:18pt;
+                font-weight: 700;
+                text-decoration: none;
+                color: rgb(188,164,82);
+                background: none;
+                
+                    
+            }
+            
+            .button1 {
+                border: none;
+                border-bottom: 4px solid rgb(137,56,27)
+                
+            }
+   
+            .button1:hover {
+                border-top: 4px solid rgb(220,86,6);
+                border-bottom: none
+            }
+            
+            .button2 {
+                border: none;
+                border-bottom: 4px solid rgb(92,172,139)
+                
+            }
+   
+            .button2:hover {
+                border-top: 4px solid rgb(194,210,153);
+                border-bottom: none
+            }
+            
+            .button3 {
+                border: none;
+                border-bottom: 4px solid rgb(119,83,49)
+                
+            }
+   
+            .button3:hover {
+                border-top: 6px solid rgb(30,14,19);
+                border-bottom: none
+            }
+            
+            .button4 {
+                padding: 10px;
+                color: rgb(137,56,27);
+                background: rgb(225,167,112);
+                border:none;
+                border-bottom: 4px solid rgb(220,86,6);
+                border-left: 4px solid rgb(220,86,6);
+                border-radius: 2px
+            }
+            
+            .button4:hover{
+                color: rgb(19,80,58);
+                background: rgb(90,179,145);
+                border:none;
+                border-bottom: 4px solid rgb(195,210,157);
+                border-left: 4px solid rgb(195,210,157)
+            }
+            
+            .footer {
+                background-color: black;
+                padding-left: 10px;
+                padding-top: 40px;
+                padding-bottom: 80px;
+                text-align: center;
+            }
+
+                        .footer p {
+                opacity: 0.5;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 10pt;
+                font-weight: 400;
+                color: rgb(188,164,82);
+                margin-left: 0px
+            }
+            
+            p {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 10pt;
+                font-weight: 400;
+                color: rgb(188,164,82);
+                margin-left: 15px
+            }
+            .somespace {
+                height: 100px;
+                color: black
+            }
+            
+
+            
+            hr {
+                border-color:rgb(188,164,82);
+                width:0;
+                animation-name: example;
+                animation-duration: 20s;
+                animation-fill-mode: forwards;
+                animation-delay: 5s
+            }
+            
+
+            @keyframes example {
+              from {width:0;}
+              to {width: 100%;}
+            }
+            
+            .video-container {
+                overflow: hidden;
+                position: relative;
+                width:100%;
+                margin-bottom: 80px
+            }
+
+            .video-container::after {
+                padding-top: 56.25%;
+                display: block;
+                content: '';
+            }
+
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size:25pt;
+                font-weight: bold;
+                text-decoration: none;
+                color: rgb(188,164,82);
+                background: none;
+                margin: 40px 40px
+            }
+     
+           .medias {
+                align-items: center;
+                display: flex;
+               flex-direction: row;
+                justify-content: center;
+                
+              padding: 50px 50px;
+              font-size: 125px;
+              
+              text-decoration: none;
+              margin: 5px 2px;
+            } 
+            
+            @media (max-width: 700px) {
+              .medias {
+                  flex-direction: column;
+                }
+                        }
+            
+            .fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram {
+            padding: 25px 25px;
+
+              text-align: center;
+              text-decoration: none;
+              margin: 5px 20px;
+                
+              align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex: 1; 
+            }
+
+        
+            .fa-facebook:hover {
+              background: #3B5998;
+              color: white;
+            cursor: pointer
+            }
+
+        
+            .fa-twitter:hover {
+              background: #55ACEE;
+              color: white;
+                cursor: pointer
+            }
+            
+            .fa-youtube:hover {
+              background: #bb0000;
+              color: white;
+             cursor: pointer
+            }
+            
+            .fa-instagram:hover {
+              background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+              color: white;
+                cursor: pointer
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <p><a href="Part2-Website-1.html"><img class="logo" src="images/Fazer%20Logo.png" alt="FazersLogo" width="150"></a></p>
+            <div class="header-right">
+                <a class="button1" href="Part2-Website-2.html">Our (PURE DARK) Chocolate</a> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <a class="button2" href="Part2-Website-3.html">Fazer in graphics</a> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <a class="button3" href="">Let's be friends!</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                <a class="button4" href="Part2-Website-4.html">Send feedback</a>
+            </div>
+        </div>
+        
+        <div class="video-container">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/1e494sTlIuY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+       <div class="intro-to-medias">
+        <h3>Find this and many other videos on our YouTube channel.<br> Let's be friends via Facebook, Instagram and Twitter!</h3>
+        </div>
+        <div class="medias">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="https://www.youtube.com/user/TheFazerGroup/featured" class="fa fa-youtube"></a>
+        <a href="https://www.facebook.com/fazersuomi" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/fazersuomi/" class="fa fa-instagram"></a>    
+        <a href="https://twitter.com/FazerSuomi" class="fa fa-twitter"></a>
+        </div>
+        <div class="somespace"></div>
+        <hr>
+        <div class="footer">
+        <p>Fazerintie 6<br>
+        PO Box 4<br>
+        FI-00941 HELSINKI<br>
+        FINLAND</p>
+        </div>
+    </body>
+</html>

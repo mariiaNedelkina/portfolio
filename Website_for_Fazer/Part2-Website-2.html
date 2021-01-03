@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fazer Pure Dark</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            .header {
+              overflow: hidden;
+              background-color: black;
+              padding: 30px 10px
+            }
+            
+            .header-right {
+              float: right;
+              padding-top: 65px;
+              padding-right: 25px
+            }
+            
+            @media screen and (max-width: 1180px) {
+              .header a, img {
+                float: none;
+                display: block;
+                text-align: left;
+              }
+
+              .header-right {
+                float: none;
+              }
+            }
+
+            body {
+                background-color: black
+            }
+            
+            .header img {
+                float:left;
+                margin-left: 15px
+            }
+            
+            a {
+                font-family: 'Montserrat', sans-serif;
+                font-size:18pt;
+                font-weight: 700;
+                text-decoration: none;
+                color: rgb(188,164,82);
+                background: none;
+                
+                    
+            }
+            
+            .button1 {
+                border: none;
+                border-bottom: 4px solid rgb(137,56,27)
+                
+            }
+   
+            .button1:hover {
+                border-top: 4px solid rgb(220,86,6);
+                border-bottom: none
+            }
+            
+            .button2 {
+                border: none;
+                border-bottom: 4px solid rgb(92,172,139)
+                
+            }
+   
+            .button2:hover {
+                border-top: 4px solid rgb(194,210,153);
+                border-bottom: none
+            }
+            
+            .button3 {
+                border: none;
+                border-bottom: 4px solid rgb(119,83,49)
+                
+            }
+   
+            .button3:hover {
+                border-top: 6px solid rgb(30,14,19);
+                border-bottom: none
+            }
+            
+            .button4 {
+                padding: 10px;
+                color: rgb(137,56,27);
+                background: rgb(225,167,112);
+                border:none;
+                border-bottom: 4px solid rgb(220,86,6);
+                border-left: 4px solid rgb(220,86,6);
+                border-radius: 2px
+            }
+            
+            .button4:hover{
+                color: rgb(19,80,58);
+                background: rgb(90,179,145);
+                border:none;
+                border-bottom: 4px solid rgb(195,210,157);
+                border-left: 4px solid rgb(195,210,157)
+            }
+            
+            .footer {
+                background-color: black;
+                padding-left: 10px;
+                padding-top: 40px;
+                padding-bottom: 80px;
+                text-align: center;
+            }
+            
+              .footer p {
+                opacity: 0.5;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 10pt;
+                font-weight: 400;
+                color: rgb(188,164,82);
+                margin-left: 0px
+            }
+            
+            p {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 10pt;
+                font-weight: 400;
+                color: rgb(188,164,82);
+                margin-left: 15px
+            }
+            .somespace {
+                height: 100px;
+                color: black
+            }
+            
+
+            
+            hr {
+                border-color:rgb(188,164,82);
+                width:0;
+                animation-name: example;
+                animation-duration: 20s;
+                animation-fill-mode: forwards;
+                animation-delay: 5s
+            }
+            
+
+            @keyframes example {
+              from {width:0;}
+              to {width: 100%;}
+            }
+
+            .pricing-table {
+                align-items: center;
+                display: flex;
+                justify-content: center
+            }
+            
+                        @media (max-width: 800px) {
+              .pricing-table {
+                  flex-direction: column;
+                }
+               
+                        }
+            
+            .pricing-column-one, .pricing-column-two, .pricing-column-three {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex: 1;
+                margin: 0 8px;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                border-radius: 4px;
+                padding-left: 15px;
+                padding-right: 25px;
+                padding-bottom: 20px
+                    
+            }
+            
+            button {
+                padding: 10px;
+                margin: 25px 0px
+                    
+            }
+            
+            h4 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 25pt
+            }
+             
+            .pricing-column-one p {
+                text-align: justify;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15pt
+            }
+            
+           .pricing-column-two p {
+                text-align: justify;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15pt
+            }
+            
+            .pricing-column-three p {
+                text-align: justify;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15pt
+            }
+            
+            .price p {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 30pt
+            } 
+            
+            .pricing-column-one {
+                background-color: rgb(119,214,196);
+                border: 5px solid rgb(28,124,120)
+            }
+            
+            
+            .title-one h4 {
+                color: rgb(19,80,58)
+            }
+            
+            .pricing-column-one button[type="button"] {
+                border: none;
+                border-bottom: 4px solid rgb(195,210,157);
+                border-left: 4px solid rgb(195,210,157);
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                font-size: 15pt;
+                background-color: rgb(119,214,196);
+                color: rgb(19,80,58);
+                padding: 16px 32px;
+                text-decoration: none;
+                
+                cursor: pointer;
+                transition-property: border;
+                transition-duration: 0.13s;
+                
+            }
+            .pricing-column-one button[type="button"]:hover {
+                border: 4px solid rgb(195,210,157)
+            }
+            
+            .pricing-column-two {
+                background-color: rgb(223,168,112);
+                border: 5px solid rgb(138,57,27)
+            }
+            
+            .title-two h4 {
+                color: rgb(237,92,0)
+            }
+            
+            .pricing-column-two button[type="button"] {
+                border: none;
+                border-bottom: 4px solid rgb(220,86,6);
+                border-left: 4px solid rgb(220,86,6);
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                font-size: 15pt;
+                background-color: rgb(223,168,112);
+                color: rgb(138,57,27);
+                padding: 16px 32px;
+                text-decoration: none;
+                
+                cursor: pointer;
+                transition-property: border;
+                transition-duration: 0.13s;
+                
+            }
+            .pricing-column-two button[type="button"]:hover {
+                border: 4px solid rgb(220,86,6)
+            }
+            
+            .pricing-column-three {
+                background-color: rgb(169,121,97);
+                border: 5px solid rgb(65,34,36)
+            }
+            
+            .title-three h4 {
+                color: rgb(65,34,36)
+            }
+            
+            .pricing-column-three button[type="button"] {
+                border: none;
+                border-bottom: 4px solid rgb(69,46,38);
+                border-left: 4px solid rgb(69,46,38);
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                font-size: 15pt;
+                background-color: rgb(169,121,97);
+                color: rgb(65,34,36);
+                padding: 16px 32px;
+                text-decoration: none;
+                
+                cursor: pointer;
+                transition-property: border;
+                transition-duration: 0.13s;
+                
+            }
+            .pricing-column-three button[type="button"]:hover {
+                border: 4px solid rgb(69,46,38)
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <p><a href="Part2-Website-1.html"><img class="logo" src="images/Fazer%20Logo.png" alt="FazersLogo" width="150"></a></p>
+            <div class="header-right">
+                <a class="button1" href="">Our (PURE DARK) Chocolate</a> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <a class="button2" href="Part2-Website-3.html">Fazer in graphics</a> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <a class="button3" href="Part2-Website-5.html">Let's be friends!</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                <a class="button4" href="Part2-Website-4.html">Send feedback</a>
+            </div>
+        </div>
+    
+        <div class="somespace"></div>
+
+        
+        <div class="pricing-table">
+
+        <div class="pricing-column-one">
+           
+            <div class="title-one">
+            <h4>Twist of Mint</h4>
+            </div>
+
+            <div class="price">
+                <p style="color:rgb(28,124,120)">€2.69</p>
+            </div>
+
+            <div class="item-description">
+            <p style="color:rgb(28,124,120)">Pure Dark Twist of Mint on Fazerin hienointa tummaa suklaata joka on valmistettu huolella valituista kaakaopavuista perinteisellä suklaan tekemisen taidolla. Tämä suosikki on rakenteeltaan tasainen ja sileä ja maultaan pehmeän hienostunut.</p>
+            </div>
+
+            <a href="https://fi.fazer.com/products/fazer-pure-dark-70-cocoa-twist-of-mint-95-g?source=igodigital"><button type="button">LISÄÄ</button></a>
+               
+        </div>
+
+         <div class="pricing-column-two" >
+         
+            <div class="title-two">
+            <h4>Hasselpähkinä</h4>
+            </div>
+
+            <div class="price">
+                <p style="color: rgb(138,57,27)">€2.69</p>
+            </div>
+
+            <div class="item-description">
+            <p style="color: rgb(138,57,27)">Pure Dark Crunchy Hazelnut on tyylikäs yhdistelmä Fazerin hienointa tummaa suklaata ja rapeaa hasselpähkinärouhetta, joka hurmaa pehmeällä täyteläisyydellään. Pure Dark -suklaat sopivat myös vegaaneille. Mikä parasta, kaikki Fazerin herkulliset suklaat on valmistettu 100 % vastuullisesti tuotetusta kaakaosta.</p>
+            </div>
+
+            <a href="https://fi.fazer.com/products/fazer-pure-dark-hasselpahkina-95-g?variant=15311863808043&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gclid=EAIaIQobChMIxP2E-p7c7AIVitwYCh2YiwuDEAQYASABEgINSPD_BwE#"><button type="button">LISÄÄ</button></a>
+
+        </div>
+            
+            <div class="pricing-column-three">
+
+            <div class="title-three">
+            <h4>Tumma Suklaa</h4>
+            </div>
+
+            <div class="price">
+                <p style="color: rgb(69,46,38)">€2.69</p>
+            </div>
+
+            <div class="item-description">
+            <p style="color: rgb(69,46,38)">Fazer Pure Dark on yllättävän erilainen 70 % tumma suklaa, joka valmistetaan huolella valituista raaka-aineista tinkimättömällä suklaan tekemisen taidolla. Pure Dark 70 % cocoa on sileää ja täyteläistä puhdasta tummaa suklaata, joka on valmistettu hienoimmista kaakopavuista.</p>
+            </div>
+
+            <a href="https://fi.fazer.com/products/fazer-pure-dark-70-cocoa-chocolate-95-g?_pos=2&_sid=00ffff66f&_ss=r"><button type="button">LISÄÄ</button></a>
+
+        </div>
+</div>
+        
+        
+        <div class="somespace"></div>
+        <hr>
+        <div class="footer">
+        <p>Fazerintie 6<br>
+        PO Box 4<br>
+        FI-00941 HELSINKI<br>
+        FINLAND</p>
+        </div>
+    </body>
+</html>
